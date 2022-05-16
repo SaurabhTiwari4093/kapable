@@ -7,7 +7,7 @@ export default function WelcomePage() {
 
   return (
     <>
-      <title>Kapable-Welcome Page</title>
+      <title>Kapable</title>
       <main>
         <div className="bg-[#e3f2fd] min-h-screen p-12 flex justify-center text-slate-800 items-center">
           <div className="bg-white p-10 rounded-lg text-center w-full h-full md:w-1/2 lg:w-1/3 border border-[#bee1fa]">

@@ -4,8 +4,6 @@ import Image from "next/image";
 export default function Login() {
   return (
     <>
-      <title>Kapable-B2B Login</title>
-      <main>
         <div className="bg-[#e3f2fd] min-h-screen p-12 flex justify-center text-slate-800 items-center">
           <div className="bg-white p-10 rounded-lg text-center w-full h-full md:w-1/2 lg:w-1/3 border border-[#bee1fa]">
               <div className="font-bold text-lg my-4 flex justify-center items-center gap-1">
@@ -27,7 +25,6 @@ export default function Login() {
               <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4">Login</button></div>
           </div>
         </div>
-      </main>
     </>
   )
 }
