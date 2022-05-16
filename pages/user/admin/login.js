@@ -22,7 +22,7 @@ export default function Login() {
                 <input type="password" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border-2 border-slate-300 outline-[#673ab7] text-base text-[#673ab7]"/>
                 </label>
               </div>
-              <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4">Login</button></div>
+              <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]">Login</button></div>
           </div>
         </div>
     </>
