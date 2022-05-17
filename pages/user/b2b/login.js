@@ -14,12 +14,12 @@ export default function Login() {
               <div className="text-slate-400 text-lg my-4">Enter your credentials to continue</div>
               <div className="text-left my-4">
                 <label className="text-slate-400 text-sm">Enter your email address
-                <input id="email" type="email" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border-2 border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder="abc123@gmail.com"/>
+                <input id="email" type="email" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder="abc123@gmail.com"/>
                 </label>
               </div>
               <div className="text-left my-4">
                 <label className="text-slate-400 text-sm">Password
-                <input type="password" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border-2 border-slate-300 outline-[#673ab7] text-base text-[#673ab7]"/>
+                <input type="password" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]"/>
                 </label>
               </div>
               <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]">Login</button></div>
