@@ -16,23 +16,26 @@ export default function Navbar(props) {
   }
   return (
     <div className='bg-white h-20 flex justify-between fixed top w-full items-center p-4 text-slate-800 z-20'>
-      <div className="flex items-center gap-5">
-        <div className="flex justify-between items-center w-64">
-          <div className="flex gap-2 items-center font-bold text-lg">
+      <div className="flex items-center gap-3 md:gap-5">
+        <div className="flex md:justify-between items-center md:w-64">
+          <div className="gap-2 items-center font-bold text-lg hidden md:flex">
             <div className="flex justify-center items-center"><Image src={Logo} width="25" height="25"/></div>
             <div className="flex justify-center items-center">KAPABLE</div>
           </div>
           <div className="flex items-center">
-            <button className="py-1 px-2 text-xl rounded-xl bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white" onClick={sidebar}>
+            <button className="py-1 px-2 text-xl rounded-lg bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white" onClick={sidebar}>
               <FontAwesomeIcon icon={faBars}/>
             </button>
           </div>
         </div> 
-        <div className="relative flex items-center">
-          <input type="text" className="w-96 bg-[#fafafa] h-12 border border-slate-300 outline-[#1e88e5] rounded-xl text-sm px-2 text-slate-600 font-semibold pl-10" placeholder="Search.."/>
+        <div className="relative hidden md:flex items-center">
+          <input type="text" className="w-96 bg-[#fafafa] h-12 border border-slate-300 outline-[#1e88e5] rounded-lg text-sm px-2 text-slate-600 font-semibold pl-10" placeholder="Search.."/>
           <div className="absolute left-3 text-slate-400">
             <FontAwesomeIcon icon={faSearch}/>
           </div>
+        </div>
+        <div className="md:hidden py-1 px-2 text-xl rounded-lg bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white">
+            <FontAwesomeIcon icon={faSearch}/>
         </div>
       </div>
       <div className="flex items-center gap-3">
