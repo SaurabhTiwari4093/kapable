@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faGauge,faUsers} from '@fortawesome/free-solid-svg-icons';
+import {faGauge,faUsers,faComment,faMessage} from '@fortawesome/free-solid-svg-icons';
 import styles from "../../../styles/Home.module.css";
 
 export default function Sidebar() {
@@ -10,47 +10,47 @@ export default function Sidebar() {
           <div className='border-b p-2'>
             <div className='text-slate-900 mb-3 font-semibold'>Dashboard</div>
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div><FontAwesomeIcon icon={faGauge}/></div>
-              <div>Dashboard</div>
+              <div className='flex items-center'><FontAwesomeIcon icon={faGauge}/></div>
+              <div className='flex items-center'>Dashboard</div>
             </div>
           </div>
 
           <div className='border-b p-2'>
             <div className='text-slate-900 mb-3 font-semibold'>Class</div>
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div><FontAwesomeIcon icon={faUsers}/></div>
-              <div>Take Class</div>
+              <div className='flex items-center'><FontAwesomeIcon icon={faUsers}/></div>
+              <div className='flex items-center'>Take Class</div>
             </div>
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div><FontAwesomeIcon icon={faUsers}/></div>
-              <div>Review Class</div>
+              <div className='flex items-center'><FontAwesomeIcon icon={faUsers}/></div>
+              <div className='flex items-center'>Review Class</div>
             </div>
           </div>
 
           <div className='border-b p-2'>
             <div className='text-slate-900 mb-3 font-semibold'>Feedback</div>
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div><FontAwesomeIcon icon={faUsers}/></div>
-              <div>Feedback</div>
+              <div className='flex items-center'><FontAwesomeIcon icon={faMessage}/></div>
+              <div className='flex items-center'>Feedback</div>
             </div>
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div><FontAwesomeIcon icon={faUsers}/></div>
-              <div>Interaction with parents/students</div>
+              <div className='flex items-center'><FontAwesomeIcon icon={faMessage}/></div>
+              <div className='flex items-center'>Interact with parents/students</div>
             </div>
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div><FontAwesomeIcon icon={faUsers}/></div>
-              <div>Access student</div>
+              <div className='flex items-center'><FontAwesomeIcon icon={faMessage}/></div>
+              <div className='flex items-center'>Access student</div>
             </div>
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div><FontAwesomeIcon icon={faUsers}/></div>
-              <div>Log parent Interaction</div>
+              <div className='flex items-center'><FontAwesomeIcon icon={faMessage}/></div>
+              <div className='flex items-center'>Log parent Interaction</div>
             </div>
           </div>
 
           <div className='p-2'>
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div><FontAwesomeIcon icon={faUsers}/></div>
-              <div>Recommenadation</div>
+              <div className='flex items-center'><FontAwesomeIcon icon={faComment}/></div>
+              <div className='flex items-center'>Recommenadation</div>
             </div>
           </div>
 
