@@ -20,6 +20,7 @@ const Calendar = () => {
           editable
           selectable
           height={550}
+          eventClick={onEventClick}
           events={[
             {
               title  : 'event1',
