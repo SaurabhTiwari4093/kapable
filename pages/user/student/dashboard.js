@@ -11,8 +11,8 @@ export default function Dashboard() {
     <>
       <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
       {sidebarOpen?<Sidebar/>:""}
-      <div className="px-4 pt-20 h-screen text-slate-800" style={width>="768"&&sidebarOpen?{paddingLeft:"18rem"}:{paddingLeft:"1rem"}}>
-        <div className="bg-[#e3f2fd] h-full rounded-t-lg p-4">
+      <div className="px-6 pt-20 h-screen text-slate-800" style={width>="768"&&sidebarOpen?{paddingLeft:"18rem"}:{paddingLeft:"1.5rem"}}>
+        <div className="bg-[#e3f2fd] h-full rounded-t-lg p-6">
           Student Dashboard
         </div>
       </div>
