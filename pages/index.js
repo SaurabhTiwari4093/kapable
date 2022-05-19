@@ -1,9 +1,8 @@
 import Logo from "../assets/logo.png";
 import Image from "next/image";
-import { useRouter } from "next/router";
+import Link from 'next/link';
 
 export default function WelcomePage() {
-  const router = useRouter();
 
   return (
     <>
@@ -15,11 +14,11 @@ export default function WelcomePage() {
             </div>
             <div className="text-[#673ab7] font-bold text-2xl my-4">Hi, Welcome Back</div>
             <div className="text-slate-400 text-lg my-4">Please select one to continue</div>
-            <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]" onClick={()=>{router.push('/user/admin/login')}}>Admin</button></div>  
-            <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]" onClick={()=>{router.push('/user/student/login')}}>Student</button></div>
-            <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]" onClick={()=>{router.push('/user/teacher/login')}}>Teacher</button></div>
-            <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]" onClick={()=>{router.push('/user/counsellor/login')}}>Counsellor</button></div>
-            <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]" onClick={()=>{router.push('/user/b2b/login')}}>B2B</button></div>
+            <div><Link href="/user/admin/login"><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]">Admin</button></Link></div> 
+            <div><Link href="/user/student/login"><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]">Student</button></Link></div> 
+            <div><Link href="/user/teacher/login"><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]">Teacher</button></Link></div> 
+            <div><Link href="/user/counsellor/login"><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]">Counsellor</button></Link></div> 
+            <div><Link href="/user/b2b/login"><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]">B2B</button></Link></div> 
         </div>
       </div>
     </>

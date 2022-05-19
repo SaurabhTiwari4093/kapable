@@ -10,7 +10,7 @@ export default function Sidebar() {
 
           <div className='border-b p-2'>
             <div className='text-slate-900 mb-3 font-semibold'>Dashboard</div>
-            <Link href="/user/teacher/dashboard">
+            <Link href="/user/student/dashboard">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
               <div className='flex items-center'><FontAwesomeIcon icon={faGauge}/></div>
               <div className='flex items-center'>Dashboard</div>
@@ -19,17 +19,29 @@ export default function Sidebar() {
           </div>
 
           <div className='border-b p-2'>
-            <div className='text-slate-900 mb-3 font-semibold'>Class</div>
-            <Link href="/user/teacher/takeClass/schedule">
+            <div className='text-slate-900 mb-3 font-semibold'>Task Management</div>
+            <Link href="/user/student/takeClass/schedule">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
               <div className='flex items-center'><FontAwesomeIcon icon={faUsers}/></div>
-              <div className='flex items-center'>Take Class</div>
+              <div className='flex items-center'>Schedule Demo</div>
             </div>
             </Link>
             <Link href="#">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
               <div className='flex items-center'><FontAwesomeIcon icon={faUsers}/></div>
-              <div className='flex items-center'>Review Class</div>
+              <div className='flex items-center'>Feedback</div>
+            </div>
+            </Link>
+            <Link href="#">
+            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
+              <div className='flex items-center'><FontAwesomeIcon icon={faUsers}/></div>
+              <div className='flex items-center'>Subscribe Course</div>
+            </div>
+            </Link>
+            <Link href="#">
+            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
+              <div className='flex items-center'><FontAwesomeIcon icon={faUsers}/></div>
+              <div className='flex items-center'>Schedule Session</div>
             </div>
             </Link>
           </div>
@@ -37,35 +49,8 @@ export default function Sidebar() {
           <div className='px-2 pb-0'>
             <Link href="#">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
-              <div className='flex items-center'><FontAwesomeIcon icon={faMessage}/></div>
-              <div className='flex items-center'>Feedback</div>
-            </div>
-            </Link>
-          </div>
-
-          <div className='px-2 py-0'>
-            <Link href="#">
-            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
-              <div className='flex items-center'><FontAwesomeIcon icon={faMessage}/></div>
-              <div className='flex items-center'>Interact with parents/students</div>
-            </div>
-            </Link>
-          </div>
-
-          <div className='px-2 py-0'>
-            <Link href="#">
-            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
-              <div className='flex items-center'><FontAwesomeIcon icon={faMessage}/></div>
-              <div className='flex items-center'>Access student</div>
-            </div>
-            </Link>
-          </div>
-
-          <div className='px-2 py-0'>
-            <Link href="#">
-            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
-              <div className='flex items-center'><FontAwesomeIcon icon={faMessage}/></div>
-              <div className='flex items-center'>Log parent Interaction</div>
+              <div className='flex items-center'><FontAwesomeIcon icon={faComment}/></div>
+              <div className='flex items-center'>Take Assignment</div>
             </div>
             </Link>
           </div>
@@ -74,7 +59,16 @@ export default function Sidebar() {
             <Link href="#">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
               <div className='flex items-center'><FontAwesomeIcon icon={faComment}/></div>
-              <div className='flex items-center'>Recommenadation</div>
+              <div className='flex items-center'>Upgrade Subscription</div>
+            </div>
+            </Link>
+          </div>
+
+          <div className='px-2 py-0'>
+            <Link href="#">
+            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
+              <div className='flex items-center'><FontAwesomeIcon icon={faComment}/></div>
+              <div className='flex items-center'>Interact with teacher</div>
             </div>
             </Link>
           </div>
