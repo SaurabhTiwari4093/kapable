@@ -6,13 +6,13 @@ import { useRef } from "react";
 const Calendar = () => {
   const calendarRef = useRef(null);
   return (
-    <div>
+    <div className="bg-white p-6 rounded-lg">
         <FullCalendar
           innerRef={calendarRef}
           plugins={[timeGridPlugin, interactionPlugin]}
           editable
           selectable
-          height={500}
+          height={550}
         />
     </div>
   );
