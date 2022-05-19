@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGauge,faUsers,faMessage,faChalkboardUser,faHandshake,faPersonChalkboard,faPenFancy,faPeopleArrowsLeftRight} from '@fortawesome/free-solid-svg-icons';
-import styles from "../../../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 import Link from 'next/link';
 
 export default function Sidebar() {

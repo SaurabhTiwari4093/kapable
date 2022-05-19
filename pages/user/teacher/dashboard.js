@@ -1,5 +1,5 @@
 import Navbar from "../../../components/navbar";
-import Sidebar from "./sidebar";
+import Sidebar from "../../../components/teacher/navbar";
 import { useState} from "react";
 import useWindowDimensions from '../../../components/useWindowDimensions';
 
