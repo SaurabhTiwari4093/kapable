@@ -5,7 +5,7 @@ import useWindowDimensions from '../../../../components/useWindowDimensions';
 
 export default function Dashboard() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
-  const { height, width } = useWindowDimensions();
+  const { width } = useWindowDimensions();
 
   return (
     <>
