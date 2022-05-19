@@ -12,6 +12,7 @@ const Calendar = () => {
           plugins={[timeGridPlugin, interactionPlugin]}
           editable
           selectable
+          height={500}
         />
     </div>
   );
