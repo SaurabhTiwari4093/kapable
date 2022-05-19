@@ -8,7 +8,7 @@ const Calendar = () => {
   const calendarRef = useRef(null);
 
   return (
-    <div className="border border-slate-200 bg-slate-100 p-4 rounded-lg">
+    <div className="border border-slate-200 bg-[#f7fafc] p-4 rounded-lg">
         <FullCalendar
           innerRef={calendarRef}
           plugins={[timeGridPlugin,dayGridPlugin, interactionPlugin]}
