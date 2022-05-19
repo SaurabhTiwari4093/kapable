@@ -4,7 +4,7 @@ import { useState} from "react";
 import useWindowDimensions from '../../../../components/useWindowDimensions';
 
 export default function Dashboard() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
   const { width } = useWindowDimensions();
 
   return (
