@@ -1,7 +1,12 @@
 import Logo from "../../../assets/logo.png";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 export default function Login() {
+  const router = useRouter();
+  const adminLogin=()=>{
+    router.push("./dashboard");
+  }
   return (
     <>
         <div className="bg-[#e3f2fd] min-h-screen p-12 flex justify-center text-slate-800 items-center">
@@ -22,7 +27,7 @@ export default function Login() {
                 <input type="password" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]"/>
                 </label>
               </div>
-              <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]">Login</button></div>
+              <div><button className="w-full py-2 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]" onClick={adminLogin}>Login</button></div>
           </div>
         </div>
     </>
