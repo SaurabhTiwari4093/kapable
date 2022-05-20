@@ -1,8 +1,7 @@
 import Navbar from "../../../components/navbar";
-import Sidebar from "../../../components/teacher/sidebar";
+import Sidebar from "../../../components/admin/sidebar";
 import { useState} from "react";
 import useWindowDimensions from '../../../components/useWindowDimensions';
-import Calender from "../../../components/teacher/takeClass/calender";
 import styles from "../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCalendarWeek} from '@fortawesome/free-solid-svg-icons';
@@ -23,7 +22,7 @@ export default function Dashboard() {
               <div>Admin Dashboard</div>
             </div>
             <div className="p-6">
-              <Calender/>
+              
             </div>
           </div>
         </div>
