@@ -19,7 +19,7 @@ export default function Dashboard() {
           <div className="bg-white rounded-lg">
             <div className="p-6 font-semibold text-lg border-b flex items-center gap-3">
               <div className="flex items-center"><FontAwesomeIcon icon={faCalendarWeek}/></div>
-              <div>B2B Dashboard</div>
+              <div>Curriculum Library</div>
             </div>
             <div className="p-6">
             </div>
