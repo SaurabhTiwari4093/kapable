@@ -31,19 +31,19 @@ export default function Dashboard() {
     <>
       <Navbar sidebarOpen={sidebarOpen} setSidebarOpen={setSidebarOpen}/>
       {sidebarOpen?<Sidebar/>:""}
-      <div className="px-6 pt-20 h-screen text-slate-800" style={width>="768"&&sidebarOpen?{paddingLeft:"18rem"}:{paddingLeft:"1.5rem"}}>
-        <div className="bg-[#e3f2fd] h-full rounded-t-lg p-6 overflow-y-auto" id={styles.noScrollBar}>
+      <div className="px-4 pt-20 h-screen text-slate-800" style={width>="768"&&sidebarOpen?{paddingLeft:"18rem"}:{paddingLeft:"1rem"}}>
+        <div className="bg-[#e3f2fd] h-full rounded-t-lg p-4 md:p-6 overflow-y-auto" id={styles.noScrollBar}>
           <div className="bg-white rounded-lg">
-            <div className="p-6 border-b flex gap-3 items-center">
+            <div className="p-4 md:p-6 border-b flex gap-3 items-center">
               <div>
                 <div className="font-semibold text-2xl"><span className="text-slate-500">Hello</span>, Counsellor</div>
                 <div className="font-base text-slate-500 text-normal">Welcome back!</div>
               </div>
               <div className="text-4xl flex items-center text-yellow-500"><FontAwesomeIcon icon={faHandSparkles}/></div>
             </div>
-            <div className="p-6 grid grid-cols-2 md:grid-cols-3 gap-6">
-              <div className="col-span-2 grid grid-cols-4 gap-6">
-                <div className="col-span-4 p-6 rounded-lg border">
+            <div className="p-4 md:p-6 grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+              <div className="col-span-2 grid grid-cols-4 gap-4 md:gap-6">
+                <div className="col-span-4 p-4 md:p-6 rounded-lg border">
                   <div className="font-semibold text-lg">Quick Links</div>
                   <div className="grid md:grid-cols-3 gap-3">
                     <div className="border-b md:border-b-0 md:border-r flex flex-col items-center p-3 gap-3 mt-3 cursor-pointer">
@@ -60,7 +60,7 @@ export default function Dashboard() {
                     </div>
                   </div>
                 </div>
-                <div className="col-span-4 md:col-span-2 p-6 rounded-lg border flex gap-4 relative">
+                <div className="col-span-4 md:col-span-2 p-4 md:p-6 rounded-lg border flex gap-4 relative">
                   <div className="text-3xl p-1 text-sky-600"><FontAwesomeIcon icon={faGraduationCap}/></div>
                   <div className="flex flex-col gap-2">
                     <div className="text-4xl font-bold">50</div>
@@ -76,7 +76,7 @@ export default function Dashboard() {
                   </div>
                   <div className="absolute bottom-3 right-3 text-sm text-[#673ab7] font-medium">See More {">"}</div>
                 </div>
-                <div className="col-span-4 md:col-span-2 p-6 rounded-lg border flex gap-4 relative">
+                <div className="col-span-4 md:col-span-2 p-4 md:p-6 rounded-lg border flex gap-4 relative">
                   <div className="text-3xl p-1 text-lime-600"><FontAwesomeIcon icon={faPersonChalkboard}/></div>
                   <div className="flex flex-col gap-2">
                     <div className="text-4xl font-bold">20</div>
@@ -84,7 +84,7 @@ export default function Dashboard() {
                   </div>
                   <div className="absolute bottom-3 right-3 text-sm text-[#673ab7] font-medium">See More {">"}</div>
                 </div>
-                <div className="col-span-4 md:col-span-2 p-6 rounded-lg border flex gap-4 relative">
+                <div className="col-span-4 md:col-span-2 p-4 md:p-6 rounded-lg border flex gap-4 relative">
                   <div className="text-3xl p-1 text-amber-600"><FontAwesomeIcon icon={faChartLine}/></div>
                   <div className="flex flex-col gap-2">
                     <div className="text-4xl font-bold">50{"%"}</div>
@@ -93,12 +93,12 @@ export default function Dashboard() {
                   <div className="absolute bottom-3 right-3 text-sm text-[#673ab7] font-medium">See More {">"}</div>
                 </div>
               </div>
-              <div className="col-span-2 md:col-span-1 p-6 bg-[#f6f7f8] rounded-lg relative">
+              <div className="col-span-2 md:col-span-1 p-4 md:p-6 bg-[#f6f7f8] rounded-lg relative">
                 <div className="flex items-center justify-between">
                   <div className="font-semibold text-lg">Demos</div>
                   <div className="text-slate-600 text-xl"><FontAwesomeIcon icon={faEllipsis}/></div>
                 </div>
-                <div className="mt-6">
+                <div className="my-4 md:mt-6">
                   <Pie data={data}/>
                 </div>
                 <div className="absolute bottom-3 right-3 text-sm text-[#673ab7] font-medium">See More {">"}</div>
