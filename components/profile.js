@@ -1,12 +1,13 @@
 import { useState,useEffect} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGear,faRightFromBracket} from '@fortawesome/free-solid-svg-icons';
-import Link from 'next/link';
+import { useRouter } from "next/router";
 
 export default function Profile() {
   const [greeting,setGreeting]=useState('Good Morning');
   const [userType,setUserType]=useState('Counsellor');
   const time=new Date().getHours();
+  const router = useRouter();
 
   useEffect(() => {
     if(time>=0 && time<=12){
@@ -19,6 +20,10 @@ export default function Profile() {
         setGreeting('Good Evening');
     }
   }, [time])
+
+  const logout=()=>{
+      router.push('/');
+  }
   
   return (
     <div className='absolute right-5 md:right-7 top-[4.6rem] bg-[white] shadow-xl rounded-lg p-4 md:p-6 z-30 w-5/6 md:w-1/5 text-slate-800'>
@@ -37,7 +42,7 @@ export default function Profile() {
                 </div>
             </div>
             <div className='px-2'>
-                <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
+                <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer" onClick={logout}>
                     <div className='flex items-center'><FontAwesomeIcon icon={faRightFromBracket}/></div>
                     <div className='flex items-center'>Logout</div>
                 </div>
