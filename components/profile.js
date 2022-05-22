@@ -31,17 +31,15 @@ export default function Profile() {
         </div>
         <div className="flex flex-col gap-2 mt-3 text-slate-500 font-medium text-sm">
             <div className='px-2'>
-                <Link href="#">
-                    <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
+                <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
                     <div className='flex items-center'><FontAwesomeIcon icon={faGear}/></div>
-                    <div className='flex items-center'>Account Settings</div>
-                    </div>
-                </Link>
+                    <div className='flex items-center'>Profile</div>
+                </div>
             </div>
             <div className='px-2'>
                 <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
                     <div className='flex items-center'><FontAwesomeIcon icon={faRightFromBracket}/></div>
-                    <div className='flex items-center'>Logout out</div>
+                    <div className='flex items-center'>Logout</div>
                 </div>
             </div>
         </div>
