@@ -1,0 +1,38 @@
+import { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faGear,faRightFromBracket} from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link';
+
+
+export default function Profile() {
+  const [greeting,setGreeting]=useState('Good Morning');
+  const [userType,setUserType]=useState('Counsellor');
+
+  return (
+    <div className='absolute right-5 md:right-7 top-[4.6rem] bg-[white] shadow-xl rounded-lg p-4 md:p-6 z-30 w-5/6 md:w-1/5 text-slate-800'>
+        <div className="border-b pb-4 md:pb-6">
+            <div>
+                <span className="font-bold">{greeting+", "}</span>
+                <spna className="font-medium">Saurabh Tiwari</spna>
+            </div>
+            <div className="text-slate-400">{userType}</div>
+        </div>
+        <div className="flex flex-col gap-2 mt-3 text-slate-500 font-medium text-sm">
+            <div className='px-2'>
+                <Link href="#">
+                    <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
+                    <div className='flex items-center'><FontAwesomeIcon icon={faGear}/></div>
+                    <div className='flex items-center'>Account Settings</div>
+                    </div>
+                </Link>
+            </div>
+            <div className='px-2'>
+                <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
+                    <div className='flex items-center'><FontAwesomeIcon icon={faRightFromBracket}/></div>
+                    <div className='flex items-center'>Logout out</div>
+                </div>
+            </div>
+        </div>
+    </div>
+  )
+}

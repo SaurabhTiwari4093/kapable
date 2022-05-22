@@ -2,10 +2,22 @@ import Logo from "../assets/logo.png";
 import Image from "next/image";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars, faCircleUser,faGear,faBell,faSearch} from '@fortawesome/free-solid-svg-icons';
-
+import {useState} from 'react';
+import Profile from "./profile";
 
 export default function Navbar(props) {
   const {sidebarOpen,setSidebarOpen}=props;
+  const [profileShow, setProfileShow] = useState('none')
+
+  const profile=()=>{
+    if (profileShow=='none'){
+      setProfileShow('block')
+    }
+    else{
+      setProfileShow('none')
+    }
+  }
+
   const sidebar=()=>{
     if(sidebarOpen==true){
       setSidebarOpen(false);
@@ -14,7 +26,9 @@ export default function Navbar(props) {
       setSidebarOpen(true);
     }
   }
+  
   return (
+    <>
     <div className='bg-white h-20 flex justify-between fixed top w-full items-center p-4 text-slate-800 z-20'>
       <div className="flex items-center gap-3 md:gap-5">
         <div className="flex md:justify-between items-center md:w-64">
@@ -42,7 +56,7 @@ export default function Navbar(props) {
         <div className="p-1 px-2 text-xl rounded-lg bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white cursor-pointer">
           <FontAwesomeIcon icon={faBell}/>
         </div>
-        <div className="bg-[#e3f2fd] hover:bg-[#1e88e5] text-[#1e88e5] hover:text-white rounded-3xl flex items-center gap-3 p-2 px-3 cursor-pointer">
+        <div className="bg-[#e3f2fd] hover:bg-[#1e88e5] text-[#1e88e5] hover:text-white rounded-3xl flex items-center gap-3 p-2 px-3 cursor-pointer" onClick={profile} >
           <div className="text-4xl flex items-center">
             <FontAwesomeIcon icon={faCircleUser}/>
           </div>
@@ -52,5 +66,9 @@ export default function Navbar(props) {
         </div>
       </div> 
     </div>
+    <div style={{display:profileShow}}>
+      <Profile/>
+    </div>
+    </>
   )
 }
