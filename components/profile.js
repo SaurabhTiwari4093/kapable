@@ -1,13 +1,25 @@
-import { useState } from "react";
+import { useState,useEffect} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faGear,faRightFromBracket} from '@fortawesome/free-solid-svg-icons';
 import Link from 'next/link';
 
-
 export default function Profile() {
   const [greeting,setGreeting]=useState('Good Morning');
   const [userType,setUserType]=useState('Counsellor');
+  const time=new Date().getHours();
 
+  useEffect(() => {
+    if(time>=0 && time<=12){
+        setGreeting('Good Morning');
+    }
+    else if(time>12 && time <17){
+        setGreeting('Good Afternoon');
+    }
+    else{
+        setGreeting('Good Evening');
+    }
+  }, [time])
+  
   return (
     <div className='absolute right-5 md:right-7 top-[4.6rem] bg-[white] shadow-xl rounded-lg p-4 md:p-6 z-30 w-5/6 md:w-1/5 text-slate-800'>
         <div className="border-b pb-4 md:pb-6">
