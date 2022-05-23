@@ -26,7 +26,7 @@ export default function Sidebar() {
               <div className='flex items-center'>Curriculum Management</div>
             </div>
             </Link>
-            <Link href="#">
+            <Link href="/user/counsellor/assignmentManagement">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
               <div className='flex items-center'><FontAwesomeIcon icon={faBook}/></div>
               <div className='flex items-center'>Assignment Management</div>
