@@ -5,9 +5,29 @@ import { useRouter } from "next/router";
 
 export default function Profile() {
   const [greeting,setGreeting]=useState('Good Morning');
-  const [userType,setUserType]=useState('Counsellor');
+  const [userType,setUserType]=useState('');
   const time=new Date().getHours();
   const router = useRouter();
+
+  useEffect(()=>{
+    var str=router.pathname;
+    var mySubString=str.substring(0,7);
+    if(mySubString==='/user/a'){
+        setUserType('Admin');
+    }
+    else if(mySubString==='/user/b'){
+        setUserType('B2B');
+    }
+    else if(mySubString==='/user/t'){
+        setUserType('Teacher');
+    }
+    else if(mySubString==='/user/c'){
+        setUserType('Counsellor');
+    }
+    else{
+        setUserType('');
+    }
+  },[router.pathname])
 
   useEffect(() => {
     if(time>=0 && time<=12){
