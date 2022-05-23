@@ -27,12 +27,12 @@ export default function Dashboard() {
             </div>
             <div className="p-4 md:p-6">
               <div className="grid grid-cols-5">
-                <div className="col-span-5 md:col-span-1 p-4 md:p-6 bg-violet-100 rounded-t-lg md:rounded-tr-none md:rounded-l-lg flex flex-col justify-around text-2xl text-violet-400 gap-3">
+                <div className="col-span-5 md:col-span-1 p-4 md:p-6 bg-violet-100 rounded-t-lg md:rounded-tr-none md:rounded-l-lg flex flex-col justify-around md:text-2xl text-violet-400 gap-3">
                   <div className="font-medium text-violet-600 cursor-pointer">Activity</div>
                   <div className="cursor-pointer">Theme</div>
                   <div className="cursor-pointer">Outcome</div>
                 </div>
-                <div className="col-span-5 md:col-span-4 p-4 md:p-6 bg-violet-50 rounded-b-lg md:rounded-bl-none md:rounded-r-lg grid grid-rows-2 gap-3 font-medium">
+                <div className="col-span-5 md:col-span-4 p-4 md:p-6 bg-violet-50 rounded-b-lg md:rounded-bl-none md:rounded-r-lg grid grid-rows-2 gap-3 font-medium text-sm md:text-base">
                     <div className="grid grid-cols-4 gap-2 md:gap-6">
                       <div className="col-span-2 md:col-span-1 flex items-center">
                         <label className="w-full">Name<input className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200"/></label>
@@ -65,7 +65,7 @@ export default function Dashboard() {
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-4 md:mt-6">
                 {num.map((value,index)=>(
-                  <div key={index} className="border-2 rounded-lg pb-3 text-center font-bold">
+                  <div key={index} className="border-2 rounded-lg pb-3 text-center font-bold text-sm md:text-base">
                     <Image src={Card}/>
                     <div>Cast Away</div>
                   </div>
