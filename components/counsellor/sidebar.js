@@ -20,7 +20,7 @@ export default function Sidebar() {
 
           <div className='border-b p-2'>
             <div className='text-slate-900 mb-3 font-semibold'>Management</div>
-            <Link href="#">
+            <Link href="/user/counsellor/curriculumLibrary">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
               <div className='flex items-center'><FontAwesomeIcon icon={faBookOpen}/></div>
               <div className='flex items-center'>Curriculum Management</div>
