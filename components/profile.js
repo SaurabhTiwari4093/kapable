@@ -42,7 +42,8 @@ export default function Profile() {
   }, [time])
 
   const logout=()=>{
-      router.push('/');
+    localStorage.clear();
+    router.push('/');
   }
   
   return (
