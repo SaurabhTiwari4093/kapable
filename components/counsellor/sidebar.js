@@ -20,7 +20,7 @@ export default function Sidebar() {
 
           <div className='border-b p-2'>
             <div className='text-slate-900 mb-3 font-semibold'>Curriculum</div>
-            <Link href="#">
+            <Link href="/user/counsellor/curriculumLibrary">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
               <div className='flex items-center'><FontAwesomeIcon icon={faBookOpen}/></div>
               <div className='flex items-center'>Curriculum Library</div>
@@ -63,7 +63,7 @@ export default function Sidebar() {
           </div>
 
           <div className='px-2 py-0'>
-            <Link href="/user/counsellor/curriculumLibrary">
+            <Link href="#">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
               <div className='flex items-center'><FontAwesomeIcon icon={faCalendar}/></div>
               <div className='flex items-center'>Calender</div>
@@ -72,7 +72,7 @@ export default function Sidebar() {
           </div>
 
           <div className='px-2 py-0'>
-            <Link href="/user/counsellor/curriculumLibrary">
+            <Link href="#">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
               <div className='flex items-center'><FontAwesomeIcon icon={faBook}/></div>
               <div className='flex items-center'>Assignemnt</div>
