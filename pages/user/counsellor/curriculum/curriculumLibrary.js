@@ -1,16 +1,16 @@
-import Navbar from "../../../components/navbar";
-import Sidebar from "../../../components/counsellor/sidebar";
+import Navbar from "../../../../components/navbar";
+import Sidebar from "../../../../components/counsellor/sidebar";
 import { useState} from "react";
-import useWindowDimensions from '../../../components/useWindowDimensions';
-import styles from "../../../styles/Home.module.css";
+import useWindowDimensions from '../../../../components/useWindowDimensions';
+import styles from "../../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBookOpen} from '@fortawesome/free-solid-svg-icons';
 import Image from "next/image";
-import Card from "../../../assets/card.png";
+import Card from "../../../../assets/card.png";
 
 const num=[1,2,3,4,5,6,7,8,9,10,11,12];
 
-export default function Dashboard() {
+export default function CurriculumLibrary() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const { width } = useWindowDimensions();
 
