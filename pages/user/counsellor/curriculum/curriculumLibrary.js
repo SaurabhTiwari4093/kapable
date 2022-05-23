@@ -29,8 +29,8 @@ export default function CurriculumLibrary() {
               <div className="grid grid-cols-5">
                 <div className="col-span-5 md:col-span-1 p-4 md:p-6 bg-violet-100 rounded-t-lg md:rounded-tr-none md:rounded-l-lg flex flex-col justify-around text-lg md:text-2xl text-violet-400 gap-3">
                   <div className="font-medium text-violet-600 cursor-pointer">Activity</div>
-                  <div className="cursor-pointer">Theme</div>
-                  <div className="cursor-pointer">Outcome</div>
+                  <div className="cursor-pointer hover:text-violet-600 hover:font-medium">Theme</div>
+                  <div className="cursor-pointer hover:text-violet-600 hover:font-medium">Outcome</div>
                 </div>
                 <div className="col-span-5 md:col-span-4 p-4 md:p-6 bg-violet-50 rounded-b-lg md:rounded-bl-none md:rounded-r-lg grid grid-rows-2 gap-3 font-medium text-xs md:text-sm">
                     <div className="grid grid-cols-4 gap-2 md:gap-6">
@@ -58,7 +58,7 @@ export default function CurriculumLibrary() {
                         <label className="w-full">Keyword Search<input className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200"/></label>
                       </div>
                       <div className="col-span-2 md:col-span-1 flex items-center text-sm md:text-base">
-                        <label className="pt-5 w-full"><button className="w-full p-2 rounded-lg bg-violet-700 text-white my-0.5">Search</button></label>
+                        <label className="pt-5 w-full"><button className="w-full p-2 rounded-lg bg-violet-600 hover:bg-violet-800 text-white my-0.5">Search</button></label>
                       </div>
                     </div>
                 </div>
