@@ -8,7 +8,7 @@ import {faBookOpen} from '@fortawesome/free-solid-svg-icons';
 import Image from "next/image";
 import Card from "../../../../assets/card.png";
 
-const num=[1,2,3,4,5,6,7,8,9,10,11,12];
+const num=[1,2,3,4,5,6,7,8,9,10];
 
 export default function CurriculumLibrary() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -63,7 +63,7 @@ export default function CurriculumLibrary() {
                     </div>
                 </div>
               </div>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mt-4 md:mt-6">
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 md:gap-6 mt-4 md:mt-6">
                 {num.map((value,index)=>(
                   <div key={index} className="border-2 rounded-lg pb-3 text-center font-bold text-sm md:text-base">
                     <Image src={Card}/>
