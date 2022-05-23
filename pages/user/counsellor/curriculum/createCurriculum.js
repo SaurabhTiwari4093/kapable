@@ -22,7 +22,41 @@ export default function CreateCurriculum() {
               <div>Create Curriculum</div>
             </div>
             <div className="p-4 md:p-6">
-              
+              <form>
+              <div className="bg-white p-4 md:p-6 rounded-lg border text-left">
+                  <div className="mb-4">
+                    <label className="text-slate-400 text-sm">Image
+                      <input type="file" accept="image/*" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                    </label>
+                  </div>
+                  <div className="my-4">
+                    <label className="text-slate-400 text-sm">Name
+                      <input type="discription" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder="abc"/>
+                    </label>
+                  </div>
+                  <div className="my-4">
+                    <label className="text-slate-400 text-sm">Category
+                      <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                    </label>
+                  </div>
+                  <div className="my-4">
+                    <label className="text-slate-400 text-sm">Sub Category
+                      <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                    </label>
+                  </div>
+                  <div className="my-4">
+                    <label className="text-slate-400 text-sm">Age Group
+                      <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                    </label>
+                  </div>
+                  <div className="my-4">
+                    <label className="text-slate-400 text-sm">Student Level
+                      <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                    </label>
+                  </div>
+                  <div><button className="py-2 px-4 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]">Create</button></div>
+              </div>
+              </form>
             </div>
           </div>
         </div>
