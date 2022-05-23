@@ -6,7 +6,7 @@ export default function Login() {
   const router = useRouter();
   const { user } = router.query;
   const teacherLogin=()=>{
-      router.push(`/user/${user}/dashboard`);
+      router.push(`/user/${user.toLowerCase()}/dashboard`);
   }
   return (
     <>
