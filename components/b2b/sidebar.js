@@ -18,61 +18,6 @@ export default function Sidebar() {
             </Link>
           </div>
 
-          <div className='border-b p-2'>
-            <div className='text-slate-900 mb-3 font-semibold'>Task Management</div>
-            <Link href="#">
-            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div className='flex items-center'><FontAwesomeIcon icon={faChalkboardUser}/></div>
-              <div className='flex items-center'>Schedule Demo</div>
-            </div>
-            </Link>
-            <Link href="#">
-            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div className='flex items-center'><FontAwesomeIcon icon={faMessage}/></div>
-              <div className='flex items-center'>Feedback</div>
-            </div>
-            </Link>
-            <Link href="#">
-            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div className='flex items-center'><FontAwesomeIcon icon={faChalkboard}/></div>
-              <div className='flex items-center'>Subscribe Course</div>
-            </div>
-            </Link>
-            <Link href="#">
-            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
-              <div className='flex items-center'><FontAwesomeIcon icon={faCalendarCheck}/></div>
-              <div className='flex items-center'>Schedule Session</div>
-            </div>
-            </Link>
-          </div>
-
-          <div className='px-2 pb-0'>
-            <Link href="#">
-            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
-              <div className='flex items-center'><FontAwesomeIcon icon={faPenToSquare}/></div>
-              <div className='flex items-center'>Take Assignment</div>
-            </div>
-            </Link>
-          </div>
-
-          <div className='px-2 py-0'>
-            <Link href="#">
-            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
-              <div className='flex items-center'><FontAwesomeIcon icon={faGraduationCap}/></div>
-              <div className='flex items-center'>Upgrade Subscription</div>
-            </div>
-            </Link>
-          </div>
-
-          <div className='px-2 py-0'>
-            <Link href="#">
-            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
-              <div className='flex items-center'><FontAwesomeIcon icon={faPeopleArrowsLeftRight}/></div>
-              <div className='flex items-center'>Interact with teacher</div>
-            </div>
-            </Link>
-          </div>
-
         </div>
     </div>
   )

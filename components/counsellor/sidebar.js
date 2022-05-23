@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faGauge,faBookOpen} from '@fortawesome/free-solid-svg-icons';
+import {faGauge,faBookOpen,faCalendar, faSliders, faUserGraduate, faChalkboardTeacher, faBook, faListCheck} from '@fortawesome/free-solid-svg-icons';
 import styles from "../../styles/Home.module.css";
 import Link from 'next/link';
 
@@ -18,11 +18,64 @@ export default function Sidebar() {
             </Link>
           </div>
 
+          <div className='border-b p-2'>
+            <div className='text-slate-900 mb-3 font-semibold'>Curriculum</div>
+            <Link href="#">
+            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
+              <div className='flex items-center'><FontAwesomeIcon icon={faBookOpen}/></div>
+              <div className='flex items-center'>Curriculum Library</div>
+            </div>
+            </Link>
+            <Link href="#">
+            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
+              <div className='flex items-center'><FontAwesomeIcon icon={faSliders}/></div>
+              <div className='flex items-center'>Curriculum Management</div>
+            </div>
+            </Link>
+          </div>
+
+          <div className='border-b p-2'>
+            <div className='text-slate-900 mb-3 font-semibold'>Management</div>
+            <Link href="#">
+            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
+              <div className='flex items-center'><FontAwesomeIcon icon={faBook}/></div>
+              <div className='flex items-center'>Assignment Management</div>
+            </div>
+            </Link>
+            <Link href="#">
+            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
+              <div className='flex items-center'><FontAwesomeIcon icon={faUserGraduate}/></div>
+              <div className='flex items-center'>Student Management</div>
+            </div>
+            </Link>
+            <Link href="#">
+            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
+              <div className='flex items-center'><FontAwesomeIcon icon={faChalkboardTeacher}/></div>
+              <div className='flex items-center'>Trainer Management</div>
+            </div>
+            </Link>
+            <Link href="#">
+            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer mb-1">
+              <div className='flex items-center'><FontAwesomeIcon icon={faListCheck}/></div>
+              <div className='flex items-center'>Activity Management</div>
+            </div>
+            </Link>
+          </div>
+
           <div className='px-2 py-0'>
             <Link href="/user/counsellor/curriculumLibrary">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
-              <div className='flex items-center'><FontAwesomeIcon icon={faBookOpen}/></div>
-              <div className='flex items-center'>Curriculum Library</div>
+              <div className='flex items-center'><FontAwesomeIcon icon={faCalendar}/></div>
+              <div className='flex items-center'>Calender</div>
+            </div>
+            </Link>
+          </div>
+
+          <div className='px-2 py-0'>
+            <Link href="/user/counsellor/curriculumLibrary">
+            <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
+              <div className='flex items-center'><FontAwesomeIcon icon={faBook}/></div>
+              <div className='flex items-center'>Assignemnt</div>
             </div>
             </Link>
           </div>
