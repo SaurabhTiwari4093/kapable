@@ -8,6 +8,7 @@ export default function Sidebar() {
   const [displayCurriculum, setDisplayCurriculum] = useState('none');
   const [displayAssignment, setDisplayAssignment] = useState('none');
   const [displayStudent, setDisplayStudent] = useState('none');
+  const [displayTrainer, setDisplayTrainer] = useState('none');
 
   const showCurriculum=()=>{
     if(displayCurriculum==='none'){
@@ -33,6 +34,15 @@ export default function Sidebar() {
     }
     else{
       setDisplayStudent('none');
+    }
+  }
+
+  const showTrainer=()=>{
+    if(displayTrainer==='none'){
+      setDisplayTrainer('flex');
+    }
+    else{
+      setDisplayTrainer('none');
     }
   }
   
@@ -71,6 +81,7 @@ export default function Sidebar() {
               </div>
               <div className="flex flex-col px-6 text-sm mt-1 font-normal" style={{display:displayAssignment}}>
                  <Link href="/user/counsellor/assignment/assignmentList"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>Assignment List</li></Link>
+                 <Link href="/user/counsellor/assignment/createAssignment"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>Create Assignment</li></Link>
               </div>
             </div>
 
@@ -85,9 +96,13 @@ export default function Sidebar() {
             </div>
 
             <div className='mb-1'>
-              <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg cursor-pointer p-3 pl-6">
+              <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg cursor-pointer p-3 pl-6" onClick={showTrainer}>
                 <div className='flex items-center'><FontAwesomeIcon icon={faPersonChalkboard}/></div>
                 <div className='flex items-center'>Trainer Management</div>
+              </div>
+              <div className="flex flex-col px-6 text-sm mt-1 font-normal" style={{display:displayTrainer}}>
+                 <Link href="/user/counsellor/trainer/trainerList"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>Trainer List</li></Link>
+                 <Link href="/user/counsellor/trainer/createTrainer"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>Create Trainer</li></Link>
               </div>
             </div>
 
