@@ -7,25 +7,25 @@ export default function WelcomePage() {
   const adminLogin=()=>{
     router.push({
       pathname: '/login',
-      query: { user: 'admin' }
+      query: { user: 'Admin' }
     })
   }
   const teacherLogin=()=>{
     router.push({
       pathname: '/login',
-      query: { user: 'teacher' }
+      query: { user: 'Teacher' }
     })
   }
   const counsellorLogin=()=>{
     router.push({
       pathname: '/login',
-      query: { user: 'counsellor' }
+      query: { user: 'Counsellor' }
     })
   }
   const b2bLogin=()=>{
     router.push({
       pathname: '/login',
-      query: { user: 'b2b' }
+      query: { user: 'B2B' }
     })
   }
   return (

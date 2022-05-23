@@ -16,7 +16,7 @@ export default function Login() {
                 <div className="flex justify-center"><Image src={Logo} width="25" height="25"/></div>
                 <div className="flex justify-center">KAPABLE</div>
               </div>
-              <div className="text-[#673ab7] font-bold text-2xl my-4">{user.toUpperCase()} LOGIN</div>
+              <div className="text-[#673ab7] font-bold text-2xl my-4">{user} Login</div>
               <div className="text-slate-400 text-lg my-4">Enter your credentials to continue</div>
               <div className="text-left my-4">
                 <label className="text-slate-400 text-sm">Enter your email address
