@@ -33,7 +33,7 @@ export default function Dashboard() {
       {sidebarOpen?<Sidebar/>:""}
       <div className="px-4 pt-20 h-screen text-slate-800" style={width>="768"&&sidebarOpen?{paddingLeft:"18rem"}:{paddingLeft:"1rem"}}>
         <div className="bg-[#e3f2fd] h-full rounded-t-lg p-4 md:p-6 overflow-y-auto" id={styles.noScrollBar}>
-          <div className="bg-white rounded-lg">
+          <div className="bg-white rounded-lg border border-[#bee1fa]">
             <div className="p-4 md:p-6 border-b flex gap-3 items-center">
               <div>
                 <div className="font-semibold text-xl md:text-2xl"><span className="text-slate-500">Hello</span>, Counsellor</div>
