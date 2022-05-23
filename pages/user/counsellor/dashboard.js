@@ -36,7 +36,7 @@ export default function Dashboard() {
           <div className="bg-white rounded-lg">
             <div className="p-4 md:p-6 border-b flex gap-3 items-center">
               <div>
-                <div className="font-semibold text-2xl"><span className="text-slate-500">Hello</span>, Counsellor</div>
+                <div className="font-semibold text-xl md:text-2xl"><span className="text-slate-500">Hello</span>, Counsellor</div>
                 <div className="font-base text-slate-500 text-normal">Welcome back!</div>
               </div>
               <div className="text-4xl flex items-center text-yellow-500"><FontAwesomeIcon icon={faHandSparkles}/></div>
