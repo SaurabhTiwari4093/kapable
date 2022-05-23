@@ -4,7 +4,7 @@ import { useState} from "react";
 import useWindowDimensions from '../../../../components/useWindowDimensions';
 import styles from "../../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faGraduationCap} from '@fortawesome/free-solid-svg-icons';
+import {faUserGraduate} from '@fortawesome/free-solid-svg-icons';
 
 
 export default function StudentList() {
@@ -19,7 +19,7 @@ export default function StudentList() {
         <div className="bg-[#e3f2fd] h-full rounded-t-lg p-4 md:p-6 overflow-y-auto" id={styles.noScrollBar}>
           <div className="bg-white rounded-lg">
             <div className="p-4 md:p-6 font-semibold text-lg border-b flex items-center gap-3">
-              <div className="flex items-center"><FontAwesomeIcon icon={faGraduationCap}/></div>
+              <div className="flex items-center"><FontAwesomeIcon icon={faUserGraduate}/></div>
               <div>Student List</div>
             </div>
             <div className="p-4 md:p-6">
