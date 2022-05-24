@@ -4,7 +4,7 @@ import { useState} from "react";
 import useWindowDimensions from '../../../components/useWindowDimensions';
 import styles from "../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faHandSparkles,faBookOpen,faBook,faCalendar, faGraduationCap,faIndianRupee,faPersonChalkboard,faChartLine,faEllipsis} from '@fortawesome/free-solid-svg-icons';
+import {faHandSparkles,faBookOpen,faBook,faCalendar, faGraduationCap,faPersonChalkboard,faChartLine,faEllipsis} from '@fortawesome/free-solid-svg-icons';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
 
@@ -69,10 +69,10 @@ export default function Dashboard() {
                   <div className="absolute bottom-3 right-3 text-xs md:text-sm text-[#673ab7] font-medium">See More {">"}</div>
                 </div>
                 <div className="col-span-4 md:col-span-2 p-6 rounded-lg border flex gap-4 relative">
-                  <div className="text-2xl md:text-3xl p-1 text-orange-600"><FontAwesomeIcon icon={faIndianRupee}/></div>
+                  <div className="text-2xl md:text-3xl p-1 text-orange-600"><FontAwesomeIcon icon={faPersonChalkboard}/></div>
                   <div className="flex flex-col gap-2">
-                    <div className="text-3xl md:text-4xl font-bold">50,000</div>
-                    <div className="text-slate-400 text-base md:text-lg">Total Earnings</div>
+                    <div className="text-3xl md:text-4xl font-bold">500</div>
+                    <div className="text-slate-400 text-base md:text-lg">Total Trainer</div>
                   </div>
                   <div className="absolute bottom-3 right-3 text-xs md:text-sm text-[#673ab7] font-medium">See More {">"}</div>
                 </div>

@@ -31,9 +31,9 @@ export default function CreateAssignment() {
                         <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
-                    <div>
-                      <label className="text-slate-500 text-sm">Attachment
-                        <input type="file" className="w-full py-[0.3rem] px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                    <div >
+                      <label className="text-slate-500 text-sm">Student Level
+                        <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div className="col-span-2">
@@ -52,8 +52,8 @@ export default function CreateAssignment() {
                       </label>
                     </div>
                     <div className="col-span-2">
-                      <label className="text-slate-500 text-sm">Student Level
-                        <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                      <label className="text-slate-500 text-sm">Attachment
+                        <input type="file" className="w-full py-[0.3rem] px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                   </div>
