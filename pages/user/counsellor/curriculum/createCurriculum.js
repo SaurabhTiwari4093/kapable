@@ -4,7 +4,7 @@ import { useState} from "react";
 import useWindowDimensions from '../../../../components/useWindowDimensions';
 import styles from "../../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBookOpen, faUserCircle} from '@fortawesome/free-solid-svg-icons';
+import {faBookOpen} from '@fortawesome/free-solid-svg-icons';
 
 export default function CreateCurriculum() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
