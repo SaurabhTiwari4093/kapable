@@ -4,7 +4,7 @@ import { useState} from "react";
 import useWindowDimensions from '../../../../components/useWindowDimensions';
 import styles from "../../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBookOpen} from '@fortawesome/free-solid-svg-icons';
+import {faBookOpen, faUserCircle} from '@fortawesome/free-solid-svg-icons';
 
 export default function CreateCurriculum() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
@@ -21,42 +21,45 @@ export default function CreateCurriculum() {
               <div className="flex items-center"><FontAwesomeIcon icon={faBookOpen}/></div>
               <div>Create Curriculum</div>
             </div>
-            <div className="p-4 md:p-6">
-              <form>
-              <div className="bg-white p-4 md:p-6 rounded-lg border text-left">
-                  <div className="mb-4">
-                    <label className="text-slate-400 text-sm">Image
-                      <input type="file" accept="image/*" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
-                    </label>
+            <div className="p-4 md:p-6 flex justify-center w-full">
+              <div className="w-full bg-white p-4 md:p-6 rounded-lg border">
+                  <div className="text-slate-400 text-lg mb-4">Fill this form and click submit to create curriculum</div>
+                  <div className="grid md:grid-cols-2 gap-4 md:gap-6">
+                    <div>
+                      <label className="text-slate-400 text-sm">Image
+                        <input type="file" accept="image/*" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                      </label>
+                    </div>
+                    <div>
+                      <label className="text-slate-400 text-sm">Name
+                        <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                      </label>
+                    </div>
+                    <div>
+                      <label className="text-slate-400 text-sm">Category
+                        <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                      </label>
+                    </div>
+                    <div>
+                      <label className="text-slate-400 text-sm">Sub Category
+                        <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                      </label>
+                    </div>
+                    <div>
+                      <label className="text-slate-400 text-sm">Age Group
+                        <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                      </label>
+                    </div>
+                    <div>
+                      <label className="text-slate-400 text-sm">Student Level
+                        <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                      </label>
+                    </div>
                   </div>
-                  <div className="my-4">
-                    <label className="text-slate-400 text-sm">Name
-                      <input type="discription" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder="abc"/>
-                    </label>
+                  <div className="mt-4 md:mt-6">
+                    <button type="button" className="py-2 px-6 text-white bg-[#673ab7] rounded font-medium hover:bg-[#563199]">Submit</button>
                   </div>
-                  <div className="my-4">
-                    <label className="text-slate-400 text-sm">Category
-                      <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
-                    </label>
-                  </div>
-                  <div className="my-4">
-                    <label className="text-slate-400 text-sm">Sub Category
-                      <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
-                    </label>
-                  </div>
-                  <div className="my-4">
-                    <label className="text-slate-400 text-sm">Age Group
-                      <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
-                    </label>
-                  </div>
-                  <div className="my-4">
-                    <label className="text-slate-400 text-sm">Student Level
-                      <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
-                    </label>
-                  </div>
-                  <div><button className="py-2 px-4 text-white bg-[#673ab7] rounded font-medium my-4 hover:bg-[#563199]">Create</button></div>
               </div>
-              </form>
             </div>
           </div>
         </div>
