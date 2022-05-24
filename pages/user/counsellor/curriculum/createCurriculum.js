@@ -27,7 +27,7 @@ export default function CreateCurriculum() {
                   <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                     <div>
                       <label className="text-slate-400 text-sm">Image
-                        <input type="file" accept="image/*" className="w-full py-1.5 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                        <input type="file" accept="image/*" className="w-full py-[0.3rem] px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div>

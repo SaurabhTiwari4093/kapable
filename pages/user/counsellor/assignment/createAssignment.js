@@ -34,7 +34,7 @@ export default function CreateAssignment() {
                     </div>
                     <div>
                       <label className="text-slate-400 text-sm">Attachment
-                        <input type="file" className="w-full py-1.5 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
+                        <input type="file" className="w-full py-[0.3rem] px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div className="col-span-2">
