@@ -22,8 +22,29 @@ export default function TrainerList() {
               <div className="flex items-center"><FontAwesomeIcon icon={faPersonChalkboard}/></div>
               <div>Trainer List</div>
             </div>
-            <div className="p-4 md:p-6">
-              
+            <div className="p-4 md:p-6 text-slate-600">
+              <div className="w-full text-left p-4 md:p-6 rounded-lg border">
+              <table class="table-fixed w-full">
+                <thead className="border-b">
+                  <tr>
+                    <th className="p-2">Trainer Name</th>
+                    <th className="p-2">DOB</th>
+                    <th className="p-2">Experience</th>
+                    <th className="p-2">Joining Date</th>
+                    <th className="p-2">Action</th>
+                  </tr>
+                </thead>
+                <tbody className="text-sm">
+                  <tr>
+                    <td className="p-2">xxtdhsbjb</td>
+                    <td className="p-2">fsggmqrteuio bhdytg cgfdythg</td>
+                    <td className="p-2">abc</td>
+                    <td className="p-2">24/05/2022</td>
+                    <td className="p-2"><button className="bg-[#673ab7] rounded px-3 py-1 text-white">Action</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
             </div>
           </div>
         </div>

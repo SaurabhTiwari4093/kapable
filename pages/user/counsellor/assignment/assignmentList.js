@@ -22,8 +22,29 @@ export default function AssignmentList() {
               <div className="flex items-center"><FontAwesomeIcon icon={faBook}/></div>
               <div>Assignment List</div>
             </div>
-            <div className="p-4 md:p-6">
-              
+            <div className="p-4 md:p-6 text-slate-600">
+              <div className="w-full text-left p-4 md:p-6 rounded-lg border">
+              <table class="table-fixed w-full">
+                <thead className="border-b">
+                  <tr>
+                    <th className="p-2">Title</th>
+                    <th className="p-2">Description</th>
+                    <th className="p-2">Attachment</th>
+                    <th className="p-2">Update</th>
+                    <th className="p-2">Assign</th>
+                  </tr>
+                </thead>
+                <tbody className="text-sm">
+                  <tr>
+                    <td className="p-2">xxtdhsbjb</td>
+                    <td className="p-2">fsggmqrteuio bhdytg cgfdythg</td>
+                    <td className="p-2">abc</td>
+                    <td className="p-2"><button className="bg-[#00C853] rounded px-3 py-1 text-white">Update</button></td>
+                    <td className="p-2"><button className="bg-[#673ab7] rounded px-3 py-1 text-white">Assign</button></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
             </div>
           </div>
         </div>
