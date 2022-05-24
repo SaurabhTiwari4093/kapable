@@ -27,37 +27,37 @@ export default function CreateTrainer() {
                   <div className="text-slate-500 text-lg mb-4">Fill this form and click submit to create trainer</div>
                   <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                     <div>
-                      <label className="text-slate-400 text-sm">Image
+                      <label className="text-slate-500 text-sm">Image
                         <input type="file" accept="image/*" className="w-full py-[0.3rem] px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div>
-                      <label className="text-slate-400 text-sm">Name
+                      <label className="text-slate-500 text-sm">Name
                         <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div>
-                      <label className="text-slate-400 text-sm">DOB
+                      <label className="text-slate-500 text-sm">DOB
                         <input type="date" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div>
-                      <label className="text-slate-400 text-sm">Experience
+                      <label className="text-slate-500 text-sm">Experience
                         <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div className="col-span-2">
-                      <label className="text-slate-400 text-sm">Address
+                      <label className="text-slate-500 text-sm">Address
                         <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div>
-                      <label className="text-slate-400 text-sm">SkillSet
+                      <label className="text-slate-500 text-sm">SkillSet
                         <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div>
-                      <label className="text-slate-400 text-sm">Resume
+                      <label className="text-slate-500 text-sm">Resume
                         <input type="file" className="w-full py-[0.3rem] px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>

@@ -27,32 +27,32 @@ export default function CreateAssignment() {
                   <div className="text-slate-500 text-lg mb-4">Fill this form and click submit to create assignment</div>
                   <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                     <div>
-                      <label className="text-slate-400 text-sm">Title
+                      <label className="text-slate-500 text-sm">Title
                         <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div>
-                      <label className="text-slate-400 text-sm">Attachment
+                      <label className="text-slate-500 text-sm">Attachment
                         <input type="file" className="w-full py-[0.3rem] px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div className="col-span-2">
-                      <label className="text-slate-400 text-sm">Description
+                      <label className="text-slate-500 text-sm">Description
                         <textarea type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div>
-                      <label className="text-slate-400 text-sm">Sub category
+                      <label className="text-slate-500 text-sm">Sub category
                         <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div>
-                      <label className="text-slate-400 text-sm">Age Group
+                      <label className="text-slate-500 text-sm">Age Group
                         <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
                     <div className="col-span-2">
-                      <label className="text-slate-400 text-sm">Student Level
+                      <label className="text-slate-500 text-sm">Student Level
                         <input type="text" className="w-full py-2 px-2 bg-[#fafafa] rounded-lg border border-slate-300 outline-[#673ab7] text-base text-[#673ab7]" placeholder=""/>
                       </label>
                     </div>
