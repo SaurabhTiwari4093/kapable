@@ -5,16 +5,16 @@ import useWindowDimensions from '../../../components/useWindowDimensions';
 import styles from "../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHandSparkles, faGraduationCap,faPersonChalkboard,faEllipsis, faUserFriends, faChalkboardTeacher, faListCheck} from '@fortawesome/free-solid-svg-icons';
-import { Chart as ChartJS,CategoryScale,ArcElement,LinearScale,BarElement} from 'chart.js';
+import { Chart as ChartJS,CategoryScale,ArcElement,LinearScale,BarElement, Tooltip, Legend} from 'chart.js';
 import { Pie,Bar } from 'react-chartjs-2';
 
-ChartJS.register(CategoryScale, ArcElement, LinearScale,BarElement);
+ChartJS.register(CategoryScale, ArcElement, LinearScale, BarElement,Tooltip, Legend);
 
 const dataPie = {
-  labels: ['Cat#1', 'Cat#2','Cat#3'],
+  labels: ['Cat#1', 'Cat#2', 'Cat#3' ],
   datasets: [{
     label: '# of Votes',
-    data: [12, 19,15],
+    data: [12, 19, 15],
     backgroundColor: [
       '#243f94',
       '#ed4d51',
@@ -27,7 +27,7 @@ const dataPie = {
 const dataBar = {
   labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat','Sun'],
   datasets: [{
-    label: '# of Votes',
+    label: 'Day of week',
     data: [12, 19, 3, 5, 2, 3,7],
     backgroundColor: [
       '#243f94',
