@@ -25,7 +25,7 @@ export default function CreateTrainer() {
             <div className="p-4 md:p-6">
             <div className="p-4 md:p-6 flex justify-center w-full">
               <form className="w-full bg-white p-4 md:p-6 rounded-lg border">
-                  <div className="text-slate-400 text-lg mb-4">Fill this form and click submit to create trainer</div>
+                  <div className="text-slate-500 text-lg mb-4">Fill this form and click submit to create trainer</div>
                   <div className="grid md:grid-cols-2 gap-4 md:gap-6">
                     <div>
                       <label className="text-slate-400 text-sm">Image
