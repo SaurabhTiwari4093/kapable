@@ -22,7 +22,6 @@ export default function CreateTrainer() {
               <div className="flex items-center"><FontAwesomeIcon icon={faPersonChalkboard}/></div>
               <div>Create Trainer</div>
             </div>
-            <div className="p-4 md:p-6">
             <div className="p-4 md:p-6 flex justify-center w-full">
               <form className="w-full bg-white p-4 md:p-6 rounded-lg border">
                   <div className="text-slate-500 text-lg mb-4">Fill this form and click submit to create trainer</div>
@@ -67,7 +66,6 @@ export default function CreateTrainer() {
                     <button type="button" className="py-2 px-6 text-white bg-[#673ab7] rounded font-medium hover:bg-[#563199]">Submit</button>
                   </div>
               </form>
-            </div>
             </div>
           </div>
         </div>
