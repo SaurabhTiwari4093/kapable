@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faHandSparkles,faBookOpen,faBook,faCalendar, faGraduationCap,faPersonChalkboard,faChartLine,faEllipsis} from '@fortawesome/free-solid-svg-icons';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Pie } from 'react-chartjs-2';
+import Link from 'next/link';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
 
@@ -46,18 +47,24 @@ export default function Dashboard() {
                 <div className="col-span-4 p-4 md:p-6 rounded-lg border">
                   <div className="font-semibold text-base md:text-lg">Quick Links</div>
                   <div className="grid md:grid-cols-3 gap-3">
+                    <Link href="/user/counsellor/curriculum/curriculumLibrary">
                     <div className="border-b md:border-b-0 md:border-r flex flex-col items-center p-3 gap-3 mt-3 cursor-pointer">
                       <div className="text-3xl text-blue-600"><FontAwesomeIcon icon={faBookOpen}/></div>
                       <div className="font-medium text-sm md:text-base">Curriculum Library</div>
                     </div>
+                    </Link>
+                    <Link href="/user/counsellor/assignment/assignmentList">
                     <div className="border-b md:border-b-0 md:border-r flex flex-col items-center p-3 gap-3 mt-3 cursor-pointer">
                       <div className="text-3xl text-green-600"><FontAwesomeIcon icon={faBook}/></div>
                       <div className="font-medium text-sm md:text-base">Assignments</div>
                     </div>
+                    </Link>
+                    <Link href="/user/counsellor/calender">
                     <div className="flex flex-col items-center p-3 gap-3 mt-3 cursor-pointer">
                       <div className="text-3xl text-red-600"><FontAwesomeIcon icon={faCalendar}/></div>
                       <div className="font-medium text-sm md:text-base">Calender</div>
                     </div>
+                    </Link>
                   </div>
                 </div>
                 <div className="col-span-4 md:col-span-2 p-4 md:p-6 rounded-lg border flex gap-4 relative">

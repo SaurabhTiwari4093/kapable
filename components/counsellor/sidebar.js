@@ -123,10 +123,12 @@ export default function Sidebar() {
           </div>
 
           <div className='px-2 py-0'>
+            <Link href="/user/counsellor/calender">
             <div className="flex gap-2 item-center w-full hover:bg-[#ede7f6] hover:text-[#673ab7] rounded-lg p-3 pl-6 cursor-pointer">
               <div className='flex items-center'><FontAwesomeIcon icon={faCalendar}/></div>
               <div className='flex items-center'>Calender</div>
             </div>
+            </Link>
           </div>
 
         </div>
