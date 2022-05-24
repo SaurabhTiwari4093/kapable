@@ -35,24 +35,54 @@ export default function CurriculumLibrary() {
                 <div className="col-span-5 md:col-span-4 p-4 md:p-6 bg-violet-50 rounded-b-lg md:rounded-bl-none md:rounded-r-lg grid grid-rows-2 gap-3 font-medium text-xs md:text-sm">
                     <div className="grid grid-cols-4 gap-2 md:gap-6">
                       <div className="col-span-2 md:col-span-1 flex items-center">
-                        <label className="w-full">Name<input className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200"/></label>
+                        <label className="w-full">Name<select className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200">
+                          <option>All</option>
+                          <option>Option 1</option>
+                          <option>Option 2</option>
+                          <option>Option 3</option>
+                          </select></label>
                       </div>
                       <div className="col-span-2 md:col-span-1 flex items-center">
-                        <label className="w-full">Category<input className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200"/></label>
+                        <label className="w-full">Category<select className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200">
+                        <option>All</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        </select></label>
                       </div>
                       <div className="col-span-2 md:col-span-1 flex items-center">
-                        <label className="w-full">SubCategory<input className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200"/></label>
+                        <label className="w-full">SubCategory<select className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200">
+                        <option>All</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        </select></label>
                       </div>
                       <div className="col-span-2 md:col-span-1 flex items-center">
-                        <label className="w-full">For<input className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200"/></label>
+                        <label className="w-full">For<select className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200">
+                        <option>All</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        </select></label>
                       </div>
                     </div>
                     <div className="grid grid-cols-4 gap-2 md:gap-6">
                       <div className="col-span-2 md:col-span-1 flex items-center">
-                        <label className="w-full">Age Group<input className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200"/></label>
+                        <label className="w-full">Age Group<select className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200">
+                        <option>All</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        </select></label>
                       </div>
                       <div className="col-span-2 md:col-span-1 flex items-center">
-                        <label className="w-full">Student Level<input className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200"/></label>
+                        <label className="w-full">Student Level<select className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200">
+                        <option>All</option>
+                        <option>Option 1</option>
+                        <option>Option 2</option>
+                        <option>Option 3</option>
+                        </select></label>
                       </div>
                       <div className="col-span-2 md:col-span-1 flex items-center">
                         <label className="w-full">Keyword Search<input className="w-full p-2 rounded-lg my-0.5 outline-none border-2 border-violet-200"/></label>
