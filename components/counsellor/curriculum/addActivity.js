@@ -89,11 +89,31 @@ export default function AddActivity(props) {
                   <div className="col-span-4 rounded-lg bg-[#f6f7f8] p-4 md:p-6">
                     <div className="flex justify-between items-center mb-2">
                       <div className="font-semibold">Age Group<span className="font-light">{" ("}You can add multiple{")"}</span></div>
-                      <div className="flex items-center gap-1">
-                        <div className="font-semibold text-sm">Apply to All Ages</div>
-                        <div className="text-[#673ab7] text-2xl p-0" onClick={onToggleButton}>
+                      <div className="flex items-center gap-2">
+                        <div className="font-semibold">Apply to All Ages</div>
+                        <div className="text-[#673ab7] text-3xl p-0" onClick={onToggleButton}>
                           {toggleOn?<FontAwesomeIcon icon={faToggleOn}/>:<FontAwesomeIcon icon={faToggleOff}/>}
                         </div>
+                      </div>
+                    </div>
+                    <div className="flex gap-4 text-slate-700 font-medium">
+                      <div>
+                        <label>Range Min
+                          <select className="w-full p-2 border border-slate-200 rounded-lg outline-none text-slate-600">
+                            <option>Select</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                          </select>
+                        </label>
+                      </div>
+                      <div>
+                        <label>Range Max
+                          <select className="w-full p-2 border border-slate-200 rounded-lg outline-none text-slate-600">
+                            <option>Select</option>
+                            <option>Option 1</option>
+                            <option>Option 2</option>
+                          </select>
+                        </label>
                       </div>
                     </div>
                   </div>
