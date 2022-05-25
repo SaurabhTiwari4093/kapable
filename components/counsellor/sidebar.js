@@ -71,6 +71,11 @@ export default function Sidebar() {
               <div className="flex flex-col px-6 text-sm mt-1 font-normal" style={{display:displayCurriculum}}>
                  <Link href="/user/counsellor/curriculum/curriculumLibrary"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>Curriculum Library</li></Link>
                  <Link href="/user/counsellor/curriculum/createCurriculum"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>Create Curriculum</li></Link>
+                 <Link href="/user/counsellor/curriculum/activities"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>Activities</li></Link>
+                 <Link href="/user/counsellor/curriculum/categories"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>Categories</li></Link>
+                 <Link href="/user/counsellor/curriculum/subcategories"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>SubCategories</li></Link>
+                 <Link href="/user/counsellor/curriculum/props"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>Props</li></Link>
+                 <Link href="/user/counsellor/curriculum/formats"><li className='cursor-pointer px-3 py-1.5 rounded-lg hover:text-[#673ab7] hover:font-semibold'>Formats</li></Link>
               </div>
             </div>
 
