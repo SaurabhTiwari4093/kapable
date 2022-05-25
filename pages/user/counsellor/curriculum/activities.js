@@ -7,10 +7,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBookOpen, faPlusCircle } from '@fortawesome/free-solid-svg-icons';
 import Image from "next/image";
 import Owl from "../../../../assets/owl.png"
+import AddActivity from "../../../../components/counsellor/curriculum/addActivity";
 
 export default function Activities() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const { width } = useWindowDimensions();
+  const [addActivitySidebarOpen,setAddActivitySidebarOpen]=useState(false);
+
+  const openAddActivitySidebar=()=>{
+    if(addActivitySidebarOpen==false){
+      setAddActivitySidebarOpen(true);
+    }
+  }
 
   return (
     <>
@@ -28,12 +36,13 @@ export default function Activities() {
                 <div><Image src={Owl} height={100}/></div>
                 <div className="font-bold text-base md:text-lg">No Activities Added Yet!</div>
                 <div className="text-xs md:text-sm text-slate-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quo voluptate quidem.</div>
-                <div><button className="py-2 px-6 font-semibold rounded-lg bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white my-2"><FontAwesomeIcon icon={faPlusCircle}/> Add New Activity</button></div>
+                <div><button className="py-2 px-6 font-semibold rounded-lg bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white my-2" onClick={openAddActivitySidebar}><FontAwesomeIcon icon={faPlusCircle}/>{" "}Add New Activity</button></div>
               </div>
             </div>
           </div>
         </div>
       </div>
+      {addActivitySidebarOpen?<AddActivity addActivitySidebarOpen={addActivitySidebarOpen} setAddActivitySidebarOpen={setAddActivitySidebarOpen}/>:""}
     </>
   )
 }
