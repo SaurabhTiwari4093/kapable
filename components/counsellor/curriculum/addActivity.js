@@ -87,7 +87,7 @@ export default function AddActivity(props) {
                     </div>
                   </div>
                   <div className="col-span-4 rounded-lg bg-[#f6f7f8] p-4 md:p-6">
-                    <div className="flex justify-between mb-2">
+                    <div className="flex justify-between items-center mb-2">
                       <div className="font-semibold">Age Group<span className="font-light">{" ("}You can add multiple{")"}</span></div>
                       <div className="flex items-center gap-1">
                         <div className="font-semibold text-sm">Apply to All Ages</div>
