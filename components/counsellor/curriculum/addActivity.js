@@ -1,14 +1,25 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faImage, faUpload} from '@fortawesome/free-solid-svg-icons';
+import {faImage, faToggleOff, faToggleOn, faUpload} from '@fortawesome/free-solid-svg-icons';
+import { useState } from "react";
 
 export default function AddActivity(props) {
   const { addActivitySidebarOpen, setAddActivitySidebarOpen } = props;
+  const [toggleOn, setToggleOn] = useState(false)
 
   const closeAddActivitySidebar = () => {
     if (addActivitySidebarOpen == true) {
       setAddActivitySidebarOpen(false);
     }
   };
+
+  const onToggleButton=()=>{
+    if(!toggleOn){
+      setToggleOn(true)
+    }
+    else{
+      setToggleOn(false)
+    }
+  }
 
   return (
     <div className="w-full grid grid-cols-5 h-screen fixed right-0 top-0 z-30 text-slate-800 overflow-y-auto">
@@ -79,12 +90,9 @@ export default function AddActivity(props) {
                     <div className="flex justify-between mb-2">
                       <div className="font-semibold">Age Group<span className="font-light">{" ("}You can add multiple{")"}</span></div>
                       <div className="flex items-center gap-1">
-                       <div className="font-semibold text-sm">Apply to All Ages</div>
-                       <div>
-                          <label for="toggle-example-checked" class="flex items-center cursor-pointer relative">
-                          <input type="checkbox" id="toggle-example-checked" class="sr-only" checked/>
-                          <div class="toggle-bg bg-gray-200 border-2 border-gray-200 h-6 w-11 rounded-full"></div>
-                          </label>
+                        <div className="font-semibold text-sm">Apply to All Ages</div>
+                        <div className="text-[#673ab7] text-2xl p-0" onClick={onToggleButton}>
+                          {toggleOn?<FontAwesomeIcon icon={faToggleOn}/>:<FontAwesomeIcon icon={faToggleOff}/>}
                         </div>
                       </div>
                     </div>
