@@ -27,7 +27,7 @@ const dataPie = {
 const dataBar = {
   labels: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat','Sun'],
   datasets: [{
-    label: 'Day of week',
+    label: 'Revenue',
     data: [12, 19, 3, 5, 2, 3,7],
     backgroundColor: [
       '#243f94',
