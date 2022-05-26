@@ -91,7 +91,7 @@ export default function AddActivity(props) {
                       <div className="font-semibold">Age Group<span className="font-light">{" ("}You can add multiple{")"}</span></div>
                       <div className="flex items-center gap-2">
                         <div className="font-semibold">Apply to All Ages</div>
-                        <div className="text-[#673ab7] text-3xl p-0" onClick={onToggleButton}>
+                        <div className="text-[#673ab7] text-3xl p-0 cursor-pointer" onClick={onToggleButton}>
                           {toggleOn?<FontAwesomeIcon icon={faToggleOn}/>:<FontAwesomeIcon icon={faToggleOff}/>}
                         </div>
                       </div>
