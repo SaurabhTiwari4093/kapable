@@ -4,11 +4,19 @@ import { useState} from "react";
 import useWindowDimensions from '../../../../components/useWindowDimensions';
 import styles from "../../../../styles/Home.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
+import { faBookOpen, faSliders ,faPlusCircle} from '@fortawesome/free-solid-svg-icons';
+import AddCategory from "../../../../components/counsellor/curriculum/addCategory";
 
 export default function Categories() {
   const [sidebarOpen, setSidebarOpen] = useState(true);
   const { width } = useWindowDimensions();
+  const [addCategorySidebarOpen,setAddCategorySidebarOpen]=useState(false);
+
+  const openAddCategorySidebar=()=>{
+    if(addCategorySidebarOpen==false){
+      setAddCategorySidebarOpen(true);
+    }
+  }
 
   return (
     <>
@@ -21,12 +29,19 @@ export default function Categories() {
               <div className="flex items-center"><FontAwesomeIcon icon={faBookOpen}/></div>
               <div>Categories</div>
             </div>
-            <div className="p-4 md:p-6 flex items-center justify-center h-full text-center">
-              
+            <div className="p-4 md:p-6">
+                <div className="flex justify-between items-center">
+                  <div></div>
+                  <div className="flex items-center gap-4 text-sm">
+                    <div><button className="py-2 px-6 font-semibold rounded-lg border"><FontAwesomeIcon icon={faSliders}/>{" "}Filter</button></div>
+                    <div><button className="py-2 px-6 font-semibold rounded-lg bg-[#ede7f6] text-[#673ab7] hover:bg-[#673ab7] hover:text-white" onClick={openAddCategorySidebar}><FontAwesomeIcon icon={faPlusCircle}/>{" "}Add New Category</button></div>
+                  </div>
+                </div>  
             </div>
           </div>
         </div>
       </div>
+      {addCategorySidebarOpen?<AddCategory addCategorySidebarOpen={addCategorySidebarOpen} setAddCategorySidebarOpen={setAddCategorySidebarOpen}/>:""}
     </>
   )
 }
