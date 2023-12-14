@@ -1,5 +1,12 @@
-import '@/styles/globals.css'
+import '../styles/globals.css';
+import "@fontsource/poppins/400.css"
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+function MyApp({ Component, pageProps }) {
+  return (
+    <div style={{fontFamily:"Poppins"}}>
+      <Component {...pageProps} />
+    </div>
+  ) 
 }
+
+export default MyApp
